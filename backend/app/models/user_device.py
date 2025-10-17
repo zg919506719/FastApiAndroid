@@ -1,5 +1,5 @@
-from sqlalchemy import Column, String, Boolean, DateTime, Integer, ForeignKey
-from sqlalchemy.dialects.mysql import VARCHAR, INT
+from sqlalchemy import Column, String, Boolean, DateTime, Integer, ForeignKey, INT
+from sqlalchemy.dialects.mysql import VARCHAR
 from sqlalchemy.sql import func
 from sqlalchemy.orm import relationship
 from app.core.database import Base

@@ -1,8 +1,10 @@
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from typing import List
+
+from app.api.v1.endpoints.auth import oauth2_scheme
 from app.core.database import get_db
-from app.core.security import get_user_id_from_token, oauth2_scheme
+from app.core.security import get_user_id_from_token
 from app.models.device import Device, DeviceType
 from app.models.user_device import UserDevice
 from app.schemas.device import DeviceCreate, DeviceResponse, DeviceUpdate

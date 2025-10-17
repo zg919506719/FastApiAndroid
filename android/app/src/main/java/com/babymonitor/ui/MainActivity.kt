@@ -9,10 +9,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.babymonitor.databinding.ActivityMainBinding
-import com.babymonitor.ui.auth.LoginActivity
-import com.babymonitor.ui.camera.CameraActivity
-import com.babymonitor.ui.viewer.ViewerActivity
-import com.babymonitor.ui.settings.SettingsActivity
 import com.babymonitor.data.local.preferences.UserPreferences
 import com.babymonitor.data.repository.AuthRepository
 import kotlinx.coroutines.CoroutineScope
@@ -57,7 +53,7 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun setupUI() {
-        // 采集模式按钮
+     /*   // 采集模式按钮
         binding.btnCameraMode.setOnClickListener {
             startActivity(Intent(this, CameraActivity::class.java))
         }
@@ -75,7 +71,7 @@ class MainActivity : AppCompatActivity() {
         // 登录按钮
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
-        }
+        }*/
     }
     
     private fun checkPermissions() {
